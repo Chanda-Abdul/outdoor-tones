@@ -1,24 +1,40 @@
 .about {
-  margin: 10rem 4rem;
+  margin: 30rem 3rem 10rem;
+
 
   &__list {
-      max-width: 88rem;
 
-      &--value {
 
-          position: relative;
+    &--value {
+
+      position: relative;
+
+      p {
+        color: var(--camouflage);
       }
+    }
 
-      &--overlay {
-          display: block;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-          background-color: white;
-          opacity: 0.75;
-          transform-origin: center right;
-      }
+    &--overlay {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: var(--emptiness);
+      opacity: 0.75;
+      transform-origin: center right;
+    }
   }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin: 10rem 4rem;
+
+    &__list {
+      max-width: 88rem;
+    }
+  }
+
 }
