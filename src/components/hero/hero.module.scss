@@ -1,0 +1,83 @@
+.hero {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    // background-color: white;
+    align-content: center;
+
+    &__title {
+        text-align: center;
+        max-width: 10ch;
+        z-index: 2;
+        mix-blend-mode: difference;
+        color: white;
+        font-size: 16rem;
+    }
+
+    &__title {
+
+        &--first,
+        &--last {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+    &__gallery {
+        img {
+            position: absolute;
+
+            &:nth-child(1) {
+                width: 21rem;
+                height: 31rem;
+                top: 0;
+                left: 4rem;
+            }
+
+            &:nth-child(2) {
+                width: 27rem;
+                height: 6rem;
+                top: 0;
+                left: 34rem;
+            }
+
+            &:nth-child(3) {
+                width: 19.7rem;
+                height: 13rem;
+                top: 0;
+                right: 4rem;
+            }
+
+            &:nth-child(4) {
+                width: 21rem;
+                height: 31.3rem;
+                top: 9.5rem;
+                right: 26.7rem;
+            }
+
+            &:nth-child(5) {
+                width: 19.7rem;
+                height: 13rem;
+                top: 37rem;
+                left: 26.7rem;
+            }
+
+            &:nth-child(6) {
+                width: 13.5rem;
+                height: 20rem;
+                top: 52.5rem;
+                left: 12rem;
+            }
+
+            &:nth-child(7) {
+                width: 35.7rem;
+                height: 23.8rem;
+                top: 46rem;
+                right: 4rem;
+            }
+        }
+    }
+
+}

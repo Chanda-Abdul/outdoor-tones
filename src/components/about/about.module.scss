@@ -1,0 +1,24 @@
+.about {
+  margin: 10rem 4rem;
+
+  &__list {
+      max-width: 88rem;
+
+      &--value {
+
+          position: relative;
+      }
+
+      &--overlay {
+          display: block;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          background-color: white;
+          opacity: 0.75;
+          transform-origin: center right;
+      }
+  }
+}

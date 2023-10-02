@@ -37,5 +37,11 @@
     "undici": "5.22.1",
     "vite": "4.4.7",
     "vite-tsconfig-paths": "4.2.0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.25",
+    "gsap": "^3.12.2",
+    "lenis": "^0.0.2",
+    "sass": "^1.68.0"
   }
 }

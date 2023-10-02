@@ -1,0 +1,56 @@
+.banner {
+  position: relative;
+  min-height: 51rem;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%); //https://bennettfeely.com/clippy/
+
+  img {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+
+  }
+
+  &__content {
+      position: absolute;
+      z-index: 2;
+      color: white;
+
+      &--title {
+          font-size: 6.4rem;
+          margin-bottom: 1.6rem;
+      }
+
+      &--text {
+          font-size: 2.4rem;
+          max-width: 48ch;
+      }
+  }
+
+
+
+
+  &__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background-color: black;
+      opacity: 0;
+  }
+
+  &__text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      color: white;
+  }
+}
+

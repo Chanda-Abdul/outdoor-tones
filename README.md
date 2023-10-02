@@ -1,3 +1,23 @@
+# Outdoor Tones
+
+
+- https://qwik.builder.io/docs/
+- https://github.com/studio-freight/lenis
+
+## Built with
+- Qwik/Vite
+- GSAP
+- Lenis
+- HTML
+- CSS/Sass
+- JavaScript/TypeScript
+
+inspired by this [tutorial ](https://youtu.be/laS7TrKXqG8?si=F-5YqO4zICPFIeAY)
+
+## Features
+- Smoothscroll
+- Parallax
+
 # Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
