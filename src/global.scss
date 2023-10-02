@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+  --emptiness: #fcfcfc;
+  --reversed-grey: #050908;
+  --charcoal-sketch: #5e5c55;
+  --camouflage: #402c07;
+  --caramel-gold: #b2926c;
+  --forestry: #23441b;
+  --lions-lair: #7f532b;
+  --tabasco: #941e07;
+  --furious-fox: #ce521b;
+}
+
 *,
 *:before,
 *:after {
@@ -7,7 +19,6 @@
   padding: 0;
   box-sizing: inherit;
 }
-
 
 html {
   font-size: 62.5%; //  1rem = 10px 10px/16px = 62.5%
@@ -20,42 +31,37 @@ html {
 
   .lenis {
     height: auto;
-  
+
     .lenis-smooth {
       scroll-behavior: auto;
     }
-  
+
     .lenis-smooth [data-lenis-prevent] {
       overscroll-behavior: contain;
     }
-  
+
     .lenis-stopped {
       overflow: hidden;
     }
-  
+
     .lenis-scrolling iframe {
       pointer-events: none;
     }
   }
 }
 
-
-
-
 body {
   width: 100vw;
   box-sizing: border-box;
-
-  font-family: 'Inter',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: var(--emptiness);
   padding: 0;
   line-height: inherit;
-
+  color: var(--reversed-grey);
   /* hide scrollbars */
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -80,18 +86,25 @@ a {
 
 a {
   text-decoration: none;
+
+  &,
+  &:visited,
+  &:active {
+    color: var(--furious-fox);
+    font-weight: 600;
+  }
 }
 
 h1,
 h2 {
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 1;
 }
 
 p {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   letter-spacing: -0.03em;
   line-height: 1.5;
 }
@@ -100,6 +113,8 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0px 7px 29px 0px rgba(#5e5c55, 0.75);
 }
 
 [data-hidden] {
@@ -107,6 +122,25 @@ img {
 }
 
 section {
-  margin: 0 4rem;
+  margin: 0 3rem;
 }
 
+@media screen and (min-width: 768px) {
+
+  h1,
+  h2 {
+    font-size: 8rem;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 2.4rem;
+    letter-spacing: -0.03em;
+    line-height: 1.5;
+  }
+
+  section {
+    margin: 0 4rem;
+  }
+}
