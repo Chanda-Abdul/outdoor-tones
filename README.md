@@ -1,5 +1,5 @@
 # Outdoor Tones
-
+view [demo](https://musical-parfait-897184.netlify.app/)
 
 - https://qwik.builder.io/docs/
 - https://github.com/studio-freight/lenis
@@ -84,6 +84,7 @@ The production build will generate client and server modules by running both cli
 npm run build # or `yarn build`
 ```
 
+
 ## Netlify
 
 This starter site is configured to deploy to [Netlify Edge Functions](https://docs.netlify.com/edge-functions/overview/), which means it will be rendered at an edge location near to your users.
@@ -123,6 +124,7 @@ Netlify-specific option fields that can be passed to the adapter options:
 
 - `excludedPath` this option accepts a `string` glob pattern that represents which path pattern should not go through the generated Edge Functions.
 
+=======
 ### Deployments
 
 You can [deploy your site to Netlify](https://docs.netlify.com/site-deploys/create-deploys/) either via a Git provider integration or through the Netlify CLI. This starter site includes a `netlify.toml` file to configure your build for deployment.

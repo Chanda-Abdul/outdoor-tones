@@ -2,7 +2,6 @@
     display: grid;
     place-items: center;
     height: 100vh;
-    // background-color: white;
     align-content: center;
 
     &__title {
@@ -11,13 +10,13 @@
         z-index: 2;
         mix-blend-mode: difference;
         color: white;
-        font-size: 16rem;
+        font-size: 20rem;  
     }
 
     &__title {
-
         &--first,
         &--last {
+           visibility: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,7 +27,7 @@
     &__gallery {
         img {
             position: absolute;
-
+            visibility: hidden;
             &:nth-child(1) {
                 width: 21rem;
                 height: 31rem;
