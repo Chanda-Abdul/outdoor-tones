@@ -76,7 +76,6 @@ The preview command will create a production build of the client modules, a prod
 npm run preview # or `yarn preview`
 ```
 
-<<<<<<< Updated upstream
 ## Production
 
 The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
@@ -84,7 +83,8 @@ The production build will generate client and server modules by running both cli
 ```shell
 npm run build # or `yarn build`
 ```
-=======
+
+
 ## Netlify
 
 This starter site is configured to deploy to [Netlify Edge Functions](https://docs.netlify.com/edge-functions/overview/), which means it will be rendered at an edge location near to your users.
@@ -124,4 +124,34 @@ Netlify-specific option fields that can be passed to the adapter options:
 
 - `excludedPath` this option accepts a `string` glob pattern that represents which path pattern should not go through the generated Edge Functions.
 
->>>>>>> Stashed changes
+=======
+### Deployments
+
+You can [deploy your site to Netlify](https://docs.netlify.com/site-deploys/create-deploys/) either via a Git provider integration or through the Netlify CLI. This starter site includes a `netlify.toml` file to configure your build for deployment.
+
+#### Deploying via Git
+
+Once your site has been pushed to your Git provider, you can either link it [in the Netlify UI](https://app.netlify.com/start) or use the CLI. To link your site to a Git provider from the Netlify CLI, run the command:
+
+```shell
+netlify link
+```
+
+This sets up [continuous deployment](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git) for your site's repo. Whenever you push new commits to your repo, Netlify starts the build process..
+
+#### Deploying manually via the CLI
+
+If you wish to deploy from the CLI rather than using Git, you can use the command:
+
+```shell
+netlify deploy --build
+```
+
+You must use the `--build` flag whenever you deploy. This ensures that the Edge Functions that this starter site relies on are generated and available when you deploy your site.
+
+Add `--prod` flag to deploy to production.
+
+## Resources 
+
+- [Qwik - `useVisibleTask$()
+` Hook](https://qwik.builder.io/docs/components/tasks/#usevisibletask)

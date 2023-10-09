@@ -39,8 +39,7 @@ lerna-debug.log*
 # Yarn
 .yarn/*
 !.yarn/releases
-<<<<<<< Updated upstream
-=======
+
 
 # Netlify
 .netlify
@@ -49,4 +48,4 @@ lerna-debug.log*
 .eslintignore
 .prettierignore
 .eslintrc.cjs
->>>>>>> Stashed changes
+
