@@ -24,7 +24,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Editor
-.vscode/*
+/.vscode/*
 !.vscode/launch.json
 !.vscode/*.code-snippets
 
@@ -39,3 +39,14 @@ lerna-debug.log*
 # Yarn
 .yarn/*
 !.yarn/releases
+<<<<<<< Updated upstream
+=======
+
+# Netlify
+.netlify
+
+
+.eslintignore
+.prettierignore
+.eslintrc.cjs
+>>>>>>> Stashed changes

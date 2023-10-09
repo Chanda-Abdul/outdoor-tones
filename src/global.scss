@@ -18,28 +18,26 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
 
-  .lenis {
-    height: auto;
+  // .lenis {
+  //   height: auto;
   
-    .lenis-smooth {
-      scroll-behavior: auto;
-    }
+  //   .lenis-smooth {
+  //     scroll-behavior: auto;
+  //   }
   
-    .lenis-smooth [data-lenis-prevent] {
-      overscroll-behavior: contain;
-    }
+  //   .lenis-smooth [data-lenis-prevent] {
+  //     overscroll-behavior: contain;
+  //   }
   
-    .lenis-stopped {
-      overflow: hidden;
-    }
+  //   .lenis-stopped {
+  //     overflow: hidden;
+  //   }
   
-    .lenis-scrolling iframe {
-      pointer-events: none;
-    }
-  }
+  //   .lenis-scrolling iframe {
+  //     pointer-events: none;
+  //   }
+  // }
 }
-
-
 
 
 body {
